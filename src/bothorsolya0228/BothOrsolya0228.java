@@ -61,8 +61,15 @@ public class BothOrsolya0228 {
         for (int j = 0; j < szam; j++){
             if (sorozat[j]>0){
                 System.out.printf("%d ",j);
+                if (sorozat[j] > 1000){
+                    for (int i = 0; i < (sorozat[j]/1000); i++) {
+                    System.out.printf("*");
+                    }
+                }
+                else{
                 for (int i = 0; i < sorozat[j]; i++) {
                     System.out.printf("*");
+                }
                 }
                 System.out.printf(" (%d db)\n", sorozat[j]);
             }
